@@ -6,6 +6,12 @@ Important Issues Solution Refs:
 # [IMPORTANT RESOLUTION] Dj-models sengmented migrations in different databases
     https://code.djangoproject.com/ticket/23273
 
+# [Medium Journal - IMPORTANT Ref] Using Django with Multiple Databases
+    https://dboostme.medium.com/using-django-with-multiple-databases-introduction-8f0ffb409995
+
+# [YT Video - Helpful Ref Video] - Django Full Course - 7.1 - Multiple databases. Database routers, automatic db routing
+    https://www.youtube.com/watch?v=IE8cNpf_Hkc
+
 # How to expose your multiple databases for admin site in Django
     https://sydjameer.medium.com/how-to-expose-your-multiple-database-for-admin-site-in-django-50a7870d14ab
 
@@ -27,3 +33,8 @@ Important Issues Solution Refs:
 # [EXTRA] Implement multitenancy
     https://www.section.io/engineering-education/implement-multitenancy-with-multiple-databases-in-django/#implement-multitenancy
 
+# [EXTRA] - Database routers
+    https://www.protechtraining.com/blog/post/tutorial-using-djangos-multiple-database-support-477
+
+# [EXTRA - readthedocs] - Multi tenant Schema Documentation
+    https://django-tenants.readthedocs.io/_/downloads/en/latest/pdf/
