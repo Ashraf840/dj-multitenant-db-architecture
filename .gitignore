@@ -1,4 +1,4 @@
 env
 venv
-**/migrations/0*.py
+**/migrations/0*.py     # ignores all migration-files from all apps exluding "__init__.py" file
 **/__pycache__/

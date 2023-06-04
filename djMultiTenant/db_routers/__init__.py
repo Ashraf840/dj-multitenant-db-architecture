@@ -1,8 +1,6 @@
+from .book_router import BookRouter
 from .author_router import AuthorRouter
-from .book_router import Bookrouter
+from django.db import router
 
 
-__all__ = [
-    "AuthorRouter",
-    "Bookrouter",
-]
+__all__ = ["AuthorRouter", "BookRouter"]

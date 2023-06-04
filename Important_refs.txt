@@ -1,0 +1,29 @@
+Important Issues Solution Refs:
+
+# [Official Doc] Implementation of multiple databases in django project
+    https://docs.djangoproject.com/en/4.2/topics/db/multi-db/#hints
+
+# [IMPORTANT RESOLUTION] Dj-models sengmented migrations in different databases
+    https://code.djangoproject.com/ticket/23273
+
+# How to expose your multiple databases for admin site in Django
+    https://sydjameer.medium.com/how-to-expose-your-multiple-database-for-admin-site-in-django-50a7870d14ab
+
+# [MISCELLANEOUS] Django migrations with multiple databases
+    https://stackoverflow.com/questions/35609509/django-migrations-with-multiple-databases
+
+# [Offical Doc] Django custom model admin: admin can access models from different databases
+[EXTRA]     https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin
+
+# [EXTRA] Django custom model admin
+    https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.InlineModelAdmin
+
+# [Offical Doc] Exposing multiple databases in Django’s admin interface
+    https://docs.djangoproject.com/en/4.2/topics/db/multi-db/#exposing-multiple-databases-in-django-s-admin-interface
+
+# [EXTRA - Official Doc] Database configuration
+    https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-DATABASES
+
+# [EXTRA] Implement multitenancy
+    https://www.section.io/engineering-education/implement-multitenancy-with-multiple-databases-in-django/#implement-multitenancy
+

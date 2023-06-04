@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'booksApp.apps.BooksappConfig',
+    'authorApp.apps.AuthorappConfig',
 ]
 
 MIDDLEWARE = [
@@ -76,18 +77,20 @@ WSGI_APPLICATION = 'djMultiTenant.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASE_ROUTERS = [
-    # "db_routers.author_router.AuthorRouter",
-    # "db_routers.book_router.Bookrouter",
-    # "author_router.AuthorRouter",
-    # "book_router.Bookrouter",
-    # "djMultiTenant.author_router.AuthorRouter",       [WORKING - while inside settings-dir; remove one-step-backward from db_migrate.sh file]
-    # "djMultiTenant.book_router.Bookrouter",           [WORKING - while inside settings-dir; remove one-step-backward from db_migrate.sh file]
-    "djMultiTenant.db_routers.author_router.AuthorRouter",      # [WORKING]
-    "djMultiTenant.db_routers.book_router.Bookrouter",          # [WORKING]
-    # os.path.join(BASE_DIR, "db_routers.author_router.py"),
-    # os.path.join(BASE_DIR, "db_routers.book_router.py"),
-]
+# DATABASE_ROUTERS = [
+#     "djMultiTenant.db_routers.author_router.AuthorRouter",      # [WORKING]
+#     "djMultiTenant.db_routers.book_router.BookRouter",          # [WORKING]
+#     # "db_routers.author_router.AuthorRouter",
+#     # "db_routers.book_router.Bookrouter",
+#     # "author_router.AuthorRouter",
+#     # "book_router.Bookrouter",
+#     # "djMultiTenant.author_router.AuthorRouter",       [WORKING - while inside settings-dir; remove one-step-backward from db_migrate.sh file]
+#     # "djMultiTenant.book_router.Bookrouter",           [WORKING - while inside settings-dir; remove one-step-backward from db_migrate.sh file]
+#     # os.path.join(BASE_DIR, "db_routers.author_router.py"),
+#     # os.path.join(BASE_DIR, "db_routers.book_router.py"),
+# ]
+
+DATABASE_ROUTERS = ["djMultiTenant.db_routers.author_router.AuthorRouter", "djMultiTenant.db_routers.book_router.BookRouter",]
 
 DATABASES = {
     'default': {
