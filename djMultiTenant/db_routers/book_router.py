@@ -1,6 +1,7 @@
 class BookRouter:
     book_db = "books"   # sqlite db config's dict-key-name: "books"
     default_db = "default"  # sqlite db config's dict-key-name: "default"
+    route_app_labels = {"booksApp", "authorApp"}
 
     def db_to_read(self, model, **hints):
         appLabel = model._meta.app_label
@@ -13,6 +14,16 @@ class BookRouter:
         if appLabel == "booksApp":
             return self.book_db
         return self.default_db
+    
+    def allow_relation(self, obj1, obj2, **hints):
+        print("allow_relation (book_router - obj1):", obj1)
+        print("allow_relation (book_router - obj2):", obj2)
+        if (
+            obj1._meta.app_label in self.route_app_labels
+            or obj2._meta.app_label in self.route_app_labels
+        ):
+            return True
+        return None
     
     def allow_migrate(self, db, app_label, model_name=None, **hints):
         # Check what value the migrate/migrations cmd contains as "--database" flag; the value must be equal to one of the dict-key from the db-config-setting.
